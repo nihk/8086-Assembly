@@ -3,7 +3,7 @@ org 100h
  
 jmp start
           
-msg db "Hello", 10, 13, "$" ; create a newline
+msg db "Hello", 10, 13, "$" ; creates a newline after the word
 msg2 db "World!$"  
 
 start:
