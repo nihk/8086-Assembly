@@ -6,7 +6,7 @@
 
 org 100h
 
-mov AL, 'N'           ; 0x41
+mov AL, 'N'           ; 0x4E
 push 0xB800
 pop DS
 
