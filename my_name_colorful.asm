@@ -27,7 +27,8 @@ printNextLetter PROC
   
   back: 
     mov DS:BX, CX    ; display letter on console
-    ret              ; Return to caller         
+    ret              ; Return to caller   
+printNextLetter ENDP    
   
 initializeBX:
   mov BX, 0x0048     ; more or less center of console
