@@ -29,7 +29,7 @@ xcrypt proc
         int 10h
         inc BX
         cmp [BX], 0
-        jne loop xcryptLoop
+        jne xcryptLoop
     ret
 xcrypt endp
 
