@@ -18,19 +18,19 @@ lea BX, cipher                  ; reload start of variable's address
 call xcrypt                     ; decrypt
 
 ret
-
-key EQU 37
+                                ; arbitrary key value
+key equ 37
 cipher db "abcd123", 0
 
-xcrypt PROC
+xcrypt proc
     xcryptLoop:
-        XOR [BX], key
+        xor [BX], key
         mov AL, [BX]
         int 10h
         inc BX
         cmp [BX], 0
         jne loop xcryptLoop
     ret
-xcrypt ENDP
+xcrypt endp
 
 end
